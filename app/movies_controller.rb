@@ -68,7 +68,7 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   Movie.create(title: "Awesome Flick")
-  m = Movie.lock.find({title: "Awesome Flic"})
+  m = Movie.lock.find({title: "Awesome Flick"})
   m.name = "Even Awesomer Flick"
   m.save!
 end
